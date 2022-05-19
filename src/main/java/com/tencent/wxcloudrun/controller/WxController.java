@@ -16,7 +16,7 @@ public class WxController {
 
     @RequestMapping
     public String wx(String token){
-        log.info("token");
+        log.info("token"+token);
 //        data = web.input()
 //        if len(data) == 0:
 //        return "hello, this is handle view"
