@@ -1,5 +1,6 @@
 package com.tencent.wxcloudrun.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,12 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
  * 2022/5/19 9:15
  */
 
+@Slf4j
 @RestController
 @RequestMapping("wx")
 public class WxController {
 
     @RequestMapping
     public String wx(String token){
+        log.info("token");
 //        data = web.input()
 //        if len(data) == 0:
 //        return "hello, this is handle view"
